@@ -80,7 +80,7 @@
 <a href="#hp" class="anchor"></a>hp</h1></div>
 <!-- badges: start -->
 
-<p>The goal of hp is to allow you to pipe a function into help.</p>
+<p>The goal of hp is to allow you to pipe a function into help using the {magrittr} pipe, <code><a href="reference/%&gt;%.html">%&gt;%</a></code>.</p>
 <p><img src="reference/figures/hp.gif" alt="Demo of the h function using code shown in the examples section"></p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -109,7 +109,16 @@
 
 <span class="co"># Function but specifying package with parentheses</span>
 <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="va">h</span></code></pre></div>
+</div>
+<div id="notes" class="section level2">
+<h2 class="hasAnchor">
+<a href="#notes" class="anchor"></a>Notes</h2>
 <p>The <code><a href="reference/h.html">h()</a></code> function is designed to only work interactively.</p>
+<p>Additionally, this package was created because the {magrittr} pipe doesn’t play well with piping in functions into the <code>help()</code> function.</p>
+<p>This was fixed with the new native R pipe operator, <code>|&gt;</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">dim</span> |&gt; <span class="fu"><a href="https://rdrr.io/r/utils/help.html">help</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p>Note, the left side should not have parentheses or R will warn you that the <code>help()</code> function requires, “a name, length-one character vector or reserved word.”</p>
 </div>
 </div>
   </div>
