@@ -19,7 +19,8 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/erictleung/hp/workflows/R-CMD-check/badge.svg)](https://github.com/erictleung/hp/actions)
 <!-- badges: end -->
 
-The goal of hp is to allow you to pipe a function into help.
+The goal of hp is to allow you to pipe a function into help using the {magrittr}
+pipe, `%>%`.
 
 ![Demo of the h function using code shown in the examples section](man/figures/hp.gif)
 
@@ -54,5 +55,20 @@ dplyr::across %>% h
 dplyr::summarise() %>% h
 ```
 
+
+## Notes
+
 The `h()` function is designed to only work interactively.
 
+Additionally, this package was created because the {magrittr} pipe doesn't play
+well with piping in functions into the `help()` function.
+
+This was fixed with the new native R pipe operator, `|>`.
+
+```r
+dim |> help()
+```
+
+Note, the left side should not have parentheses or R will warn you that the
+`help()` function requires, "a name, length-one character vector or reserved
+word."
