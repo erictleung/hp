@@ -12,6 +12,7 @@ Description: After using autocomplete on a function, instead of scrolling
     help page, this package allows you to pipe the function into a wrapper
     help function for easier access.
 License: MIT + file LICENSE
+URL: https://erictleung.com/hp, https://github.com/erictleung/hp
 Imports: 
     dplyr,
     magrittr,
