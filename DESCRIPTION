@@ -1,0 +1,22 @@
+Package: hp
+Title: Pipe a function into help()
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Eric",
+           family = "Leung",
+           role = c("aut", "cre"),
+           email = "erictleung@outlook.com",
+           comment = c(ORCID = "0000-0002-8724-1872"))
+Description: After using autocomplete on a function, instead of scrolling
+    to the front of the function to use the question mark to access the
+    help page, this package allows you to pipe the function into a wrapper
+    help function for easier access.
+License: MIT + file LICENSE
+Imports: 
+    dplyr,
+    magrittr,
+    purrr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1

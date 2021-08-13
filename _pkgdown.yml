@@ -1,0 +1,14 @@
+url: https://erictleung.com/hp, https://github.com/erictleung/hp
+
+template:
+  params:
+    bootswatch: flatly
+    ganalytics: UA-66130577-1
+
+navbar:
+  title: "hp"
+
+reference:
+  - title: hp
+    contents:
+    - h
