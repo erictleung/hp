@@ -1,10 +1,21 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # hp
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/erictleung/hp/workflows/R-CMD-check/badge.svg)](https://github.com/erictleung/hp/actions)
 <!-- badges: end -->
 
@@ -12,16 +23,15 @@ The goal of hp is to allow you to pipe a function into help.
 
 ## Installation
 
-You can install the released version of hp from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the released version of hp from [CRAN](https://CRAN.R-project.org) with:
 
-``` r
+```r
 install.packages("hp")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
 
-``` r
+```r
 # install.packages("devtools")
 remotes::install_github("erictleung/hp")
 ```
@@ -30,7 +40,7 @@ remotes::install_github("erictleung/hp")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+```{r example, eval=FALSE}
 library(hp)
 library(dplyr)
 
@@ -48,3 +58,4 @@ dplyr::summarise() %>% h
 ```
 
 The `h()` function is designed to only work interactively.
+
