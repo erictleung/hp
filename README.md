@@ -8,10 +8,10 @@
 [![R-CMD-check](https://github.com/erictleung/hp/workflows/R-CMD-check/badge.svg)](https://github.com/erictleung/hp/actions)
 <!-- badges: end -->
 
+The goal of hp is to allow you to pipe a function into help.
+
 ![Demo of the h function using code shown in the examples
 section](man/figures/hp.gif)
-
-The goal of hp is to allow you to pipe a function into help.
 
 ## Installation
 
